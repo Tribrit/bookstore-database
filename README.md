@@ -1,8 +1,8 @@
-# 📚 Bookstore Database Design & SQL Programming
+# 📚 Bookstore Database Design
 
 ## Overview
 
-This project involves designing and developing a MySQL database for a Bookstore. As the database administrator, I was responsible for structuring and managing the data related to books, authors, customers, orders, shipping, and more. The goal was to create a clean, efficient, and secure relational database that supports real-world bookstore operations.
+This project involves designing and developing a MySQL database for a Bookstore. As the database administrators, we were responsible for structuring and managing the data related to books, authors, customers, orders, shipping, and more. The goal was to create a clean, efficient, and secure relational database that supports real-world bookstore operations.
 
 This hands-on task provided valuable experience in SQL programming, database normalization, relationship mapping, and user management.
 
@@ -17,10 +17,10 @@ This hands-on task provided valuable experience in SQL programming, database nor
 
 ## Prerequisites
 
-To complete this project, the following skills and knowledge were required:
+To complete this project, we used the following skills and knowledge :
 
 - Understanding of MySQL basics
-- Ability to create tables and define relationships using SQL
+- Ability to create tables and define relationships using MySQL
 - Knowledge of data types and database normalization
 - User and role management in MySQL
 
@@ -28,7 +28,7 @@ To complete this project, the following skills and knowledge were required:
 
 ## Project Objectives
 
-- Design and implement a relational database to store bookstore data
+-  Design and implement a relational database to store bookstore data
 - Create appropriate tables with normalized structure and correct data types
 - Define and enforce relationships between tables using primary and foreign keys
 - Manage users and roles for secure database access
@@ -83,6 +83,6 @@ By completing this project, the following outcomes were achieved:
 
 - The group leader has created a GitHub repository containing:
   - SQL scripts for database creation
-  - ERD diagram (Draw.io or exported image format)
-  - This `README.md` file
+  - ERD diagram (Draw.io)
+    `README.md` file
 
