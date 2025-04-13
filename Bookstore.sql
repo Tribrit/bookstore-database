@@ -1,6 +1,30 @@
 create database BookStore;
 use BookStore;
 
+CREATE USER 'editor_user'@'localhost' IDENTIFIED BY' password ';
+
+CREATE USER 'sales_user'@'localhost' IDENTIFIED BY' password ';
+
+CREATE USER 'viewer_user'@'localhost 'IDENTIFIED BY' password ';
+
+CREATE USER ' manager _user'@'localhost' IDENTIFIED BY' password ';
+
+CREATE USER 'admin_user'@'localhost' IDENTIFIED BY' password ';
+
+Admin role: GRANT ALL PRIVILEGES ON bookstore. TO 'admin_user'@'localhost';
+
+Manager role : Grant select, update, insert , delete ON bookstore.* TO 'staff_user'@'localhost';
+REVOKE ALTER, DROP ON bookstore.* FROM 'manager_user'@'localhost';
+
+Editor role :Grant select, insert, update on bookstore.* TO 'editor_user'@'localhost';
+REVOKE DELETE, ALTER, DROP ON bookstore.* FROM 'editor_user'@'localhost';
+
+Salesperson :Grant select, insert , update on bookstore .To ' salesperson_ user@localhost';
+REVOKE DELETE, ALTER, DROP ON bookstore.* FROM 'sales_user'@'localhost';
+
+Viewer:Grant select on bookstore .to'  viewer _user@localhost';
+REVOKE INSERT, UPDATE, DELETE, ALTER, DROP ON bookstore.* FROM 'viewer_user'@'localhost';
+
 
 CREATE TABLE Book(book_id INT PRIMARY KEY, title VARCHAR(50),author VARCHAR(20),genre VARCHAR(20),publisher VARCHAR(60),lang VARCHAR(15), page_count INT);
 
